@@ -1,12 +1,10 @@
 import '../stylesheets/output.css'
-import Button from '../components/Button'
+import Header from '../components/Header'
 
 const Contact = () =>{
   return (
     <>
-      <Button path='/' label='Beranda' />
-      <Button path='/about' label='Tentang Kita' />
-      <Button path='/contact' label='Hubungi Kami' />
+      <Header />
       <p>Contact Us!</p>
     </>
   )

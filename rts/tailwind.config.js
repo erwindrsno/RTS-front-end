@@ -7,7 +7,11 @@ export default {
     colors: {
       sky: colors.sky
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }

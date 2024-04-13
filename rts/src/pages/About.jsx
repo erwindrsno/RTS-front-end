@@ -1,13 +1,11 @@
 import '../stylesheets/output.css'
 import Description from '../text/Description.jsx'
-import Button from '../components/Button.jsx'
+import Header from '../components/Header.jsx'
 
 const About = () =>{
   return (
     <>
-      <Button path='/' label='Beranda' />
-      <Button path='/about' label='Tentang Kita' />
-      <Button path='/contact' label='Hubungi Kami' />
+      <Header />
       <Description />
     </>
   )

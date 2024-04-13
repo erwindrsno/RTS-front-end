@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite & npx tailwindcss -i ./src/stylesheets/input.css -o ./src/stylesheets/output.css --watch",
+    "dev": "vite && npx tailwindcss -i ./src/stylesheets/input.css -o ./src/stylesheets/output.css --watch",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tw": "npx tailwindcss -i ./src/stylesheets/input.css -o ./src/stylesheets/output.css"
   },
   "dependencies": {
     "react": "^18.2.0",
