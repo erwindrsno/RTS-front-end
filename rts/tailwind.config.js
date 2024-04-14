@@ -5,7 +5,8 @@ export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     colors: {
-      sky: colors.sky
+      sky: colors.sky,
+      red: colors.red
     },
     extend: {
       fontFamily: {
