@@ -1,6 +1,7 @@
 import '../stylesheets/output.css'
 import { useState } from 'react';
 import axios from 'axios';
+import API from '../api/api';
 
 const Form = () => {
   const [username, setUsername] = useState("");
@@ -11,7 +12,7 @@ const Form = () => {
     event.preventDefault();
 
     try{
-      const response = await axios.post('http://192.168.0.105/login',{
+      const response = await axios.post(`${API}/login`,{
         username,
         password
       })
@@ -27,7 +28,7 @@ const Form = () => {
 
   return(
     <div className="flex flex-col justify-center items-center border-2 rounded-md p-8 space-y-8">
-      <h3>Review Topik Skripsi</h3>
+      <h1 className='text-2xl'>Login Page</h1>
       <form action="/login" method="post" className='flex flex-col space-y-8' onSubmit={handleSubmit}>
         <div className='flex flex-col'>
           <label htmlFor="username">Username: </label>
